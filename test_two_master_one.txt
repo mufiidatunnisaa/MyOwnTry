@@ -1,2 +1,127 @@
 ini test kedua master pertama
 thank you
+
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git init
+Initialized empty Git repository in /home/mufidatunnisa/Documents/BinarBootcamp/MyOwnTry/.git/
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test_one.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git add .
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git commit -m "git file test pertama"
+[master (root-commit) cd7c015] git file test pertama
+ 1 file changed, 2 insertions(+)
+ create mode 100644 test_one.txt
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git remote add origin1 https://github.com/mufiidatunnisaa/MyOwnTry.git
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push -u origin1
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin1 master
+
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push -u origin1 master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 19.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mufiidatunnisaa/MyOwnTry.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin1'.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git brach test2
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch test2
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git checkout test2
+Switched to branch 'test2'
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git status
+On branch test2
+nothing to commit, working tree clean
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branchh
+git: 'branchh' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch
+  master
+* test2
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git add .
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git commit -m "masukkan test2"
+[test2 f3fdd85] masukkan test2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 test_two.txt
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push --set-upstream origin1 test2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 159.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'test2' on GitHub by visiting:
+remote:      https://github.com/mufiidatunnisaa/MyOwnTry/pull/new/test2
+remote: 
+To https://github.com/mufiidatunnisaa/MyOwnTry.git
+ * [new branch]      test2 -> test2
+Branch 'test2' set up to track remote branch 'test2' from 'origin1'.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch -d test2
+error: Cannot delete branch 'test2' checked out at '/home/mufidatunnisa/Documents/BinarBootcamp/MyOwnTry'
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin1/master'.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch -d test2
+warning: deleting branch 'test2' that has been merged to
+         'refs/remotes/origin1/test2', but not yet merged to HEAD.
+Deleted branch test2 (was f3fdd85).
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch -D test2
+error: branch 'test2' not found.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push -d origin1 test2
+To https://github.com/mufiidatunnisaa/MyOwnTry.git
+ - [deleted]         test2
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git branch
+* master
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git add .
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git commit -m "edit tes1"
+[master 2cf3799] edit tes1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push -u origin1 master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 133.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mufiidatunnisaa/MyOwnTry.git
+   cd7c015..2cf3799  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin1'.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git add .
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git commit -m "tes2 master1"
+[master 2cefda2] tes2 master1
+ 1 file changed, 2 insertions(+)
+ create mode 100644 test_two_master_one.txt
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ git push -u origin1 master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mufiidatunnisaa/MyOwnTry.git
+   2cf3799..2cefda2  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin1'.
+mufidatunnisa@mufidatunnisa-Lenovo-ideapad-320-14ISK:~/Documents/BinarBootcamp/MyOwnTry$ 
